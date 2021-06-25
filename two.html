@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color: skyblue;">Assignment-2</h1>
+    </header>
+    <hr style="color: tomato ;" width="1200px">
+
+    <script>
+
+        var math = 50;
+        var phy = 60;
+        var chem = 70;
+        var bio = 40;
+
+    </script>
+    <main>
+        <h3 style="color: violet;">Table-1</h3>
+        <table border="1" height="350px" width="420px">
+            <tr>
+                <th>Subject Name</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td>
+                    <script> document.write(math);</script>
+                </td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>
+                    <script> document.write(phy);</script>
+                </td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>
+                    <script> document.write(chem);</script>
+                </td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>
+                    <script> document.write(bio);</script>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <script>
+                        if (math < 40 || phy < 40 || chem < 40 || bio < 40) {
+                            document.write("<b style='color:#ff0000'>Sorry You Didn't Clear This Exam!!</b>");
+                        }
+
+                        else {
+                            document.write("<b style='color:#00ff00'>Congratulations You've Cleared This Exam!!</b>");
+                        }
+                    </script>
+                </td>
+            </tr>
+        </table><br />
+        <hr style="color: tomato ;" width="1200px">
+
+        <table border="2">
+            <tr>
+                <td>Home</td>
+                <td><iframe width="120px" height="120px" src="https://www.youtube.com/embed/0WVDKZJkGlY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>Trailer</td>
+                <td><video src="Kitretsu Intro Song.mp4" height="120px" width="120px" controls></video>Video</td>
+                <td><audio src="kyon.mp3" controls></audio>Song</td>
+                <td>Contacts</td>
+            </tr>
+        </table>
+
+    </main>
+
+</body>
+
+</html>

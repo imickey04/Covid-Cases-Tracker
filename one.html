@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+</head>
+<body>
+    <header>
+        <h1 style="color: skyblue;">Assignment-1</h1>
+    </header>
+
+    <main>
+        <div class="one">
+
+            <script>
+
+                function getdata(form){
+
+                    var name = form.uname.value;
+                    var email = form.uemail.value;
+                    var phone = form.uphone.value;
+                    var password = form.upassword.value;
+                    var repassword = form.reupassword.value;
+                    var gen = form.gender.value;
+                    var city = form.ucity.value;
+
+                    
+                    if(password!=repassword){
+                        document.getElementById("msg").innerHTML = "Password & RePassword Must Be Same";
+                    }
+
+                    else{
+                        document.getElementById("msg").innerHTML = "<table border='1'> <tr><td>NAME</td><td>"+uname+"</td></tr> </table>";
+                    }
+                }
+
+            </script>
+
+        </div>
+
+        <div>
+            <form target="_blank">
+                <input type="text" name="uname" placeholder="Enter Your Name"><br/>
+                <input type="email" name="uemail" placeholder="Enter Your Enmail"><br/>
+                <input type="password" name="upassword" placeholder="Enter Your Passwrod"><br/>
+                <input type="password" name="reupassword" placeholder="Enter Your RePassword"><br/>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br/>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br/>
+                <select name="ucity">
+                    <option value="AHM">Ahmedabad</option>
+                    <option value="RJT">Rajkot</option>
+                    <option value="VDR">Vadodara</option>
+                    <option value="GND">Gandhinagar</option>
+                    <option value="NDA">Nadiad</option>
+                </select><br/>
+                <input type="submit" name="submit" value="SIGNUP" onclick="getdata(this.form); return false"><br/>
+            </form>
+            <p id="msg"></p>
+            <hr/>
+        </div>
+
+    </main>
+
+</body>
+</html>
